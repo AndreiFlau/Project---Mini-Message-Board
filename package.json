@@ -1,12 +1,15 @@
 {
   "dependencies": {
+    "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "express-validator": "^7.1.0",
     "pg": "^8.12.0"
   },
   "scripts": {
     "start": "node app.js",
+    "debug": "node --watch --inspect app.js",
     "populatedb": "node ./db/populatedb.js"
   }
 }

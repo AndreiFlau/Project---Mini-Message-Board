@@ -10,10 +10,10 @@
     <a href="/new">Create a new message!</a>
     <% messages.forEach((user) => { %>
     <div>
-      <h3><%= user.user %></h3>
-      <p><%= user.text %></p>
-      <p><%= user.added %></p>
-      <a href="/<%= user.user %>/<%= user.text %>">Open</a>
+      <h3><%= user.username %></h3>
+      <p><%= user.message %></p>
+      <p><%= user.createdAt %></p>
+      <a href="/<%= user.username %>/<%= encodeURIComponent(user.message) %>">Open</a>
     </div>
     <% }) %>
   </body>
